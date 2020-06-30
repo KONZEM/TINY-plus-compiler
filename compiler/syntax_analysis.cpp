@@ -8,8 +8,8 @@ Core Knowledge: syntax definition of TINY+
 				2. declarations -> decl ; declarations |(different from /) \epsilon
 				3. decl -> type-specifier varlist
 				4. type-specifier -> int | bool | string
-				5. varlist -> identifier (, identifier) | \epsilon
-				6. stmt-sequence -> statement (; statement) | \epsilon
+				5. varlist -> identifier (, identifier)*
+				6. stmt-sequence -> statement (; statement)*
 				7. statement -> if-stmt | repeat-stmt | assign-stmt | read-stmt | write-stmt | while-stmt
 				8. while-stmt -> while or-exp then do stmt-sequence end
 				9. if-stmt -> if or-exp then stmt-sequence (else stmt-sequence) | \epsilon end
@@ -22,7 +22,7 @@ Core Knowledge: syntax definition of TINY+
 				16. comparison-exp -> add-sub-exp (> | < | >= | <= and-sub-exp) | \epsilon
 				17. add-sub-exp -> mul-div-exp (+ | - add-sub-exp) | \epsilon
 				18. mul-div-exp -> factor (* | / mul-div-exp) | \epsilon
-				19. factor -> ID | NUMBER | STRING | true | false | ( or-exp ) | not factor
+				19. factor -> ID | NUMBER | STRING | true | false | '(' or-exp ')' | not factor
  
 */
 
