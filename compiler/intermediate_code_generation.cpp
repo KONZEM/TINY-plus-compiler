@@ -1,7 +1,7 @@
 /*
 Author: KONZEM
 Date: 2020/06/28
-File Name: main.cpp
+File Name: intermediate_code_generation.cpp
 Usage: semantic analysis and intermedia code gengeration
 Core Knowledge: 1. back patch 2. merge 
 */

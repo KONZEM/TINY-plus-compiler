@@ -1,7 +1,7 @@
 /*
 Author: KONZEM
 Date: 2020/06/28
-File Name: lexical_analysis.h
+File Name: syntax_analysis.cpp
 Usage: syntax analysis
 Core Knowledge: syntax definition of TINY+
 				1. program -> declarations stmt-sequence
